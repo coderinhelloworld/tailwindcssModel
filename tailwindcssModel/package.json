@@ -1,0 +1,24 @@
+{
+  "name": "tailwindcssTest",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.5"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss src/style.css -o dist/tailwind.css",
+    "watch": "postcss build src/style.css -o dist/tailwind.css --watch",
+    "build:css": "cross-env NODE_ENV=production postcss src/style.css -o dist/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
